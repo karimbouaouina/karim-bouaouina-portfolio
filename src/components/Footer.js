@@ -48,7 +48,7 @@ export default function Footer() {
       <div>
         <p className="flex items-center flex-nowrap whitespace-nowrap">
           {" "}
-          Karim Bouaouina Copyright © 2024
+          Karim Bouaouina Copyright © 2024 - Updated 2025
         </p>
       </div>
     </footer>

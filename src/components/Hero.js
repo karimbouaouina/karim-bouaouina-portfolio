@@ -14,12 +14,10 @@ export default function Hero() {
             Karim Bouaouina
           </h2>
           <h2 className="z-10 relative text-2xl lg:text-4xl mt-7 text-gray-400  sm:whitespace-nowrap">
-            and I'm a Full-Stack Developer..
+            Junior Full-Stack Engineer (MERN / MEAN) | AI & Data Engineer
           </h2>
           <p className="mt-7 mb-5 max-w-3xl md:my-7 lg:my-8 text-xs font-medium md:text-sm lg:text-base text-gray-500">
-            <span className="text-secondary/80 text-xs"></span>Specializing in MERN stack with a degree in Computer Science.
-Experienced in building robust web applications and always eager to put my skills to the test and
-push myself to new heights
+            <span className="text-secondary/80 text-xs"></span>Passionate AI and Data Engineering enthusiast with a strong foundation in full-stack development (MERN / MEAN). Skilled in designing scalable web applications and data-driven solutions that merge machine learning with modern software engineering. Always eager to explore innovative technologies and deliver impactful digital experiences.
             <span className="text-secondary/80 text-xs"></span>
           </p>
         </div>

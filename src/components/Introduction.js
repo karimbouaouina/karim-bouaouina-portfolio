@@ -38,7 +38,7 @@ export default function Introduction() {
           >
             <code className="text-sm md:text-base">
               {" "}
-              Karim is a highly enthusiastic individual who is deeply passionate about the field of computer science engineering, whether it's designing algorithms, debugging code, he is always eager to put his skills to the test and push himself to new heights as a well experienced front-end and back-end developer.
+              Karim is a dedicated computer science engineer focused on AI, Data Engineering, and modern full-stack development. With a strong command of the MERN / MEAN ecosystems, he thrives on building efficient, data-driven solutions and integrating machine learning into real-world applications.
             </code>
           </pre>
           <pre data-prefix="$" className="text-secondary pl-4 pt-6">
@@ -70,6 +70,18 @@ export default function Introduction() {
                 />
                 <span className="absolute text-center p-1 w-20 top-[110%] left-1/2 -translate-x-1/2 z-[9999] origin-bottom-top rounded-lg shadow-md text-white bg-gray-900 text-xs f transition-all duration-100 hidden group-hover:block">
                   Java
+                </span>
+              </div>
+
+              <div className="w-9 h-9 z-10 mb-4 rounded-full bg-transparent relative px-0.5 py-0.5 hover:scale-110 hover:cursor-pointer group transition-all hover:z-20">
+                <img
+                  src="/skills/angular.png"
+                  alt="Next.js icon"
+                  width={40}
+                  height={40}
+                />
+                <span className="absolute text-center p-1 w-20 top-[110%] left-1/2 -translate-x-1/2 z-[9999] origin-bottom-top rounded-lg shadow-md text-white bg-gray-900 text-xs f transition-all duration-100 hidden group-hover:block">
+                  Angular
                 </span>
               </div>
               
@@ -106,6 +118,42 @@ export default function Introduction() {
                 />
                 <span className="absolute text-center p-1 w-24 top-[110%] left-1/2 -translate-x-1/2 z-[9999] origin-bottom-top rounded-lg shadow-md text-white bg-gray-900 text-xs f transition-all duration-100 hidden group-hover:block">
                   Tailwind CSS
+                </span>
+              </div>
+
+              <div className="w-9 h-9 z-10 mb-4 rounded-full bg-transparent relative px-0.5 py-0.5 hover:scale-110 hover:cursor-pointer group transition-all hover:z-20">
+                <img
+                  src="/skills/openapi.svg"
+                  alt="Next.js icon"
+                  width={40}
+                  height={40}
+                />
+                <span className="absolute text-center p-1 w-20 top-[110%] left-1/2 -translate-x-1/2 z-[9999] origin-bottom-top rounded-lg shadow-md text-white bg-gray-900 text-xs f transition-all duration-100 hidden group-hover:block">
+                  OpenAPI
+                </span>
+              </div>
+
+              <div className="w-9 h-9 z-10 mb-4 rounded-full bg-transparent relative px-0.5 py-0.5 hover:scale-110 hover:cursor-pointer group transition-all hover:z-20">
+                <img
+                  src="/skills/docker.png"
+                  alt="Next.js icon"
+                  width={40}
+                  height={40}
+                />
+                <span className="absolute text-center p-1 w-20 top-[110%] left-1/2 -translate-x-1/2 z-[9999] origin-bottom-top rounded-lg shadow-md text-white bg-gray-900 text-xs f transition-all duration-100 hidden group-hover:block">
+                  Docker
+                </span>
+              </div>
+
+              <div className="w-9 h-9 z-10 mb-4 rounded-full bg-transparent relative px-0.5 py-0.5 hover:scale-110 hover:cursor-pointer group transition-all hover:z-20">
+                <img
+                  src="/skills/azure.png"
+                  alt="Next.js icon"
+                  width={40}
+                  height={40}
+                />
+                <span className="absolute text-center p-1 w-20 top-[110%] left-1/2 -translate-x-1/2 z-[9999] origin-bottom-top rounded-lg shadow-md text-white bg-gray-900 text-xs f transition-all duration-100 hidden group-hover:block">
+                  Azure
                 </span>
               </div>
               
