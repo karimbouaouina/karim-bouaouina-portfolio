@@ -192,9 +192,6 @@ export default function Biography() {
 
 
               </p>
-              <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
-              Gained hands-on experience with React, enhancing frontend development skills.
-              </p>
               <div className="w-full flex flex-wrap items-center mt-4 gap-2">
                 <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">
                   React
