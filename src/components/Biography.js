@@ -15,7 +15,7 @@ export default function Biography() {
       }
     });
     if (node) observer.current.observe(node);
-  });
+  }, []);
 
   const handleBiographyChangeTab = (index) => {
     setTabIndex(index);
@@ -53,7 +53,7 @@ export default function Biography() {
               </h2>
               <button
                 className={`py-2.5 w-fit sm:w-full text-left px-4 sm:px-2 rounded-md sm:rounded-r-md transition-all whitespace-nowrap overflow-hidden overflow-ellipsis max-w-fit sm:max-w-full ${
-                  TabIndex == 0
+                  TabIndex === 0
                     ? "text-secondary bg-primary_dark/70"
                     : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5"
                 }`}
@@ -63,7 +63,7 @@ export default function Biography() {
               </button>
               <button
                 className={`py-2.5 w-fit sm:w-full text-left px-4 sm:px-2 rounded-md sm:rounded-r-md transition-all whitespace-nowrap overflow-hidden overflow-ellipsis max-w-fit sm:max-w-full ${
-                  TabIndex == 1
+                  TabIndex === 1
                     ? "text-secondary bg-primary_dark/70"
                     : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5"
                 }`}
@@ -73,7 +73,7 @@ export default function Biography() {
               </button>
               <button
                 className={`py-2.5 w-fit sm:w-full text-left px-4 sm:px-2 rounded-md sm:rounded-r-md transition-all whitespace-nowrap overflow-hidden overflow-ellipsis max-w-fit sm:max-w-full ${
-                  TabIndex == 2
+                  TabIndex === 2
                     ? "text-secondary bg-primary_dark/70"
                     : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5"
                 }`}
@@ -83,7 +83,7 @@ export default function Biography() {
               </button>
               <button
                 className={`py-2.5 w-fit sm:w-full text-left px-4 sm:px-2 rounded-md sm:rounded-r-md transition-all whitespace-nowrap overflow-hidden overflow-ellipsis max-w-fit sm:max-w-full ${
-                  TabIndex == 3
+                  TabIndex === 3
                     ? "text-secondary bg-primary_dark/70"
                     : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5"
                 }`}
@@ -97,7 +97,7 @@ export default function Biography() {
               </h2>
               <button
                 className={`py-2.5 w-fit sm:w-full text-left px-4 sm:px-2 rounded-md sm:rounded-r-md transition-all whitespace-nowrap overflow-hidden overflow-ellipsis max-w-fit sm:max-w-full ${
-                  TabIndex == 4
+                  TabIndex === 4
                     ? "text-secondary bg-primary_dark/70"
                     : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5"
                 }`}
@@ -108,14 +108,15 @@ export default function Biography() {
             </div>
           </div>
 
-          {TabIndex == 0 && (
+          {/* ── TELEON ── */}
+          {TabIndex === 0 && (
             <div className="w-full simple-fade-in-animation p-4 min-h-[250px]">
               <h3>
                 Full-Stack Engineer{" "}
                 <span className="text-secondary">@ Teleon</span>
               </h3>
               <p className="text-sm text-zinc-400 mt-1 mb-6">
-                February 2026 – Present · Remote
+                February 2026 – Present · Tunisia · Remote
               </p>
               <p className="relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
                 Developing and scaling web applications leveraging modern automation techniques, AI agents, and intelligent tooling.
@@ -133,6 +134,9 @@ export default function Biography() {
                 <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">AI Agents</p>
                 <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Angular</p>
                 <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">TypeScript</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">FastAPI</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Python</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">PostgreSQL</p>
                 <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Docker</p>
                 <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Automation</p>
                 <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Cloud Infrastructure</p>
@@ -140,7 +144,8 @@ export default function Biography() {
             </div>
           )}
 
-          {TabIndex == 1 && (
+          {/* ── COGNIVANCE ── */}
+          {TabIndex === 1 && (
             <div className="w-full simple-fade-in-animation p-4 min-h-[250px]">
               <h3>
                 Data Engineer Intern{" "}
@@ -179,7 +184,7 @@ export default function Biography() {
           )}
 
           {/* ── KAA TRADING ── */}
-          {TabIndex == 2 && (
+          {TabIndex === 2 && (
             <div className="w-full simple-fade-in-animation p-4 min-h-[250px]">
               <h3>
                 Full-Stack Developer Intern{" "}
@@ -210,7 +215,7 @@ export default function Biography() {
           )}
 
           {/* ── SATORIPOP ── */}
-          {TabIndex == 3 && (
+          {TabIndex === 3 && (
             <div className="w-full simple-fade-in-animation p-4 min-h-[250px]">
               <h3>
                 Frontend Developer Intern{" "}
@@ -233,7 +238,8 @@ export default function Biography() {
             </div>
           )}
 
-          {TabIndex == 4 && (
+          {/* ── EDUCATION ── */}
+          {TabIndex === 4 && (
             <div className="w-full simple-fade-in-animation p-4 min-h-[250px]">
               <h3>
                 Preparatory cycle{" "}
