@@ -42,9 +42,7 @@ export default function Biography() {
           ref={biographySection}
           className="w-full flex flex-col sm:flex-row justify-start gap-5 items-start mt-10 overflow-hidden"
         >
-          <div
-            className={`w-full h-fit max-w-full sm:max-w-[220px] overflow-x-auto`}
-          >
+          <div className={`w-full h-fit max-w-full sm:max-w-[220px] overflow-x-auto`}>
             <div className="relative w-fit max-w-fit sm:min-w-[220px] sm:max-w-[220px] sm:w-[220px] flex flex-row overflow-x-scroll hidden-scrollbar sm:overflow-hidden overflow-y-hidden sm:flex-col items-start text-white/80 border-l-0 sm:border-l-2 border-primary_dark">
               <div
                 ref={indicatorRef}
@@ -57,64 +55,105 @@ export default function Biography() {
                 className={`py-2.5 w-fit sm:w-full text-left px-4 sm:px-2 rounded-md sm:rounded-r-md transition-all whitespace-nowrap overflow-hidden overflow-ellipsis max-w-fit sm:max-w-full ${
                   TabIndex == 0
                     ? "text-secondary bg-primary_dark/70"
-                    : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5 "
+                    : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5"
                 }`}
                 onClick={() => handleBiographyChangeTab(0)}
               >
-                Cognivance
+                Teleon
               </button>
               <button
                 className={`py-2.5 w-fit sm:w-full text-left px-4 sm:px-2 rounded-md sm:rounded-r-md transition-all whitespace-nowrap overflow-hidden overflow-ellipsis max-w-fit sm:max-w-full ${
                   TabIndex == 1
                     ? "text-secondary bg-primary_dark/70"
-                    : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5 "
+                    : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5"
                 }`}
                 onClick={() => handleBiographyChangeTab(1)}
               >
-                Kaa Trading
+                Cognivance
               </button>
               <button
                 className={`py-2.5 w-fit sm:w-full text-left px-4 sm:px-2 rounded-md sm:rounded-r-md transition-all whitespace-nowrap overflow-hidden overflow-ellipsis max-w-fit sm:max-w-full ${
                   TabIndex == 2
                     ? "text-secondary bg-primary_dark/70"
-                    : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5 "
+                    : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5"
                 }`}
                 onClick={() => handleBiographyChangeTab(2)}
               >
+                Kaa Trading
+              </button>
+              <button
+                className={`py-2.5 w-fit sm:w-full text-left px-4 sm:px-2 rounded-md sm:rounded-r-md transition-all whitespace-nowrap overflow-hidden overflow-ellipsis max-w-fit sm:max-w-full ${
+                  TabIndex == 3
+                    ? "text-secondary bg-primary_dark/70"
+                    : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5"
+                }`}
+                onClick={() => handleBiographyChangeTab(3)}
+              >
                 Satoripop
               </button>
-              
+
               <h2 className="relative text-secondary px-5 py-2 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary before:mt-2 sm:mt-5">
                 Education
               </h2>
               <button
                 className={`py-2.5 w-fit sm:w-full text-left px-4 sm:px-2 rounded-md sm:rounded-r-md transition-all whitespace-nowrap overflow-hidden overflow-ellipsis max-w-fit sm:max-w-full ${
-                  TabIndex == 3
+                  TabIndex == 4
                     ? "text-secondary bg-primary_dark/70"
-                    : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5 "
+                    : "hover:text-secondary/80 hover:translate-x-0.5 hover:-translate-y-0.5"
                 }`}
-                onClick={() => handleEducationChangeTab(3)}
+                onClick={() => handleEducationChangeTab(4)}
               >
                 Ecole Polytechnique Sousse
               </button>
-              
             </div>
           </div>
+
           {TabIndex == 0 && (
             <div className="w-full simple-fade-in-animation p-4 min-h-[250px]">
               <h3>
-              Data Engineer Intern{" "}
+                Full-Stack Engineer{" "}
+                <span className="text-secondary">@ Teleon</span>
+              </h3>
+              <p className="text-sm text-zinc-400 mt-1 mb-6">
+                February 2026 – Present · Remote
+              </p>
+              <p className="relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
+                Developing and scaling web applications leveraging modern automation techniques, AI agents, and intelligent tooling.
+              </p>
+              <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
+                Contributing to the deployment infrastructure of intelligent agents on a production-ready platform with auto-scaling runtime and enterprise-grade security.
+              </p>
+              <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
+                Designing and integrating robust deployment pipelines for large-scale AI agent systems.
+              </p>
+              <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
+                Actively involved in building the built-in memory and infrastructure components of the Teleon platform.
+              </p>
+              <div className="w-full flex flex-wrap items-center mt-4 gap-2">
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">AI Agents</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Angular</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">TypeScript</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Docker</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Automation</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Cloud Infrastructure</p>
+              </div>
+            </div>
+          )}
+
+          {TabIndex == 1 && (
+            <div className="w-full simple-fade-in-animation p-4 min-h-[250px]">
+              <h3>
+                Data Engineer Intern{" "}
                 <span className="text-secondary">@ Cognivance</span>
               </h3>
               <p className="text-sm text-zinc-400 mt-1 mb-6">
-              April – October 2025 · France · On-site
+                April – October 2025 · France · On-site
               </p>
               <p className="relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
                 Developed a web content extraction and indexing system to structure data for the Cogeo model.
               </p>
               <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
-                Designed a Full Stack architecture using FastAPI (backend) and Angular (frontend) with an
-                integrated embeddings engine and ChromaDB vector database.
+                Designed a Full Stack architecture using FastAPI (backend) and Angular (frontend) with an integrated embeddings engine and ChromaDB vector database.
               </p>
               <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
                 Built an automated web scraping pipeline (files, PDFs, websites) featuring progress tracking and real-time preview.
@@ -137,97 +176,75 @@ export default function Biography() {
                 <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Docker</p>
               </div>
             </div>
-
-            
           )}
 
-{TabIndex == 1 && (
+          {/* ── KAA TRADING ── */}
+          {TabIndex == 2 && (
             <div className="w-full simple-fade-in-animation p-4 min-h-[250px]">
-            <h3>
-              Full-Stack Developer Intern{" "}
-              <span className="text-secondary">@ Kaa Trading</span>
-            </h3>
-            <p className="text-sm text-zinc-400 mt-1 mb-6">June – September 2024 · Tunisia · Remote</p>
-        
-            <p className="relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
-              Developed an eCommerce platform promoting Tunisian products and cultural heritage.
-            </p>
-            <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
-              Built the application using the MERN stack, styled with Tailwind CSS, and optimized for performance and scalability.
-            </p>
-            <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
-              Designed a responsive, mobile-friendly interface ensuring smooth user experience across devices.
-            </p>
-            <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
-              Independently managed the entire project lifecycle — from planning and development to deployment — to gain hands-on full-stack experience.
-            </p>
-        
-            <div className="w-full flex flex-wrap items-center mt-4 gap-2">
-              <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">MongoDB</p>
-              <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Express.js</p>
-              <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">React</p>
-              <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Node.js</p>
-              <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Tailwind CSS</p>
-              <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Responsive Design</p>
+              <h3>
+                Full-Stack Developer Intern{" "}
+                <span className="text-secondary">@ Kaa Trading</span>
+              </h3>
+              <p className="text-sm text-zinc-400 mt-1 mb-6">June – September 2024 · Tunisia · Remote</p>
+              <p className="relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
+                Developed an eCommerce platform promoting Tunisian products and cultural heritage.
+              </p>
+              <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
+                Built the application using the MERN stack, styled with Tailwind CSS, and optimized for performance and scalability.
+              </p>
+              <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
+                Designed a responsive, mobile-friendly interface ensuring smooth user experience across devices.
+              </p>
+              <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
+                Independently managed the entire project lifecycle — from planning and development to deployment.
+              </p>
+              <div className="w-full flex flex-wrap items-center mt-4 gap-2">
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">MongoDB</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Express.js</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">React</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Node.js</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Tailwind CSS</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Responsive Design</p>
+              </div>
             </div>
-          </div>
-
-            
           )}
 
-{TabIndex == 2 && (
+          {/* ── SATORIPOP ── */}
+          {TabIndex == 3 && (
             <div className="w-full simple-fade-in-animation p-4 min-h-[250px]">
               <h3>
                 Frontend Developer Intern{" "}
                 <span className="text-secondary">@ Satoripop</span>
               </h3>
               <p className="text-sm text-zinc-400 mt-1 mb-6">
-                July - August 2023 · Tunisia · On-site
+                July – August 2023 · Tunisia · On-site
               </p>
               <p className="relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
-              Gained hands-on experience with React, enhancing frontend development skills.
+                Gained hands-on experience with React, enhancing frontend development skills.
               </p>
               <p className="mt-3 relative pl-5 text-sm text-zinc-300 before:absolute before:top-0 before:left-0.5 before:content-['▹'] before:text-secondary">
-              Developed multiple projects, including a PokeApp and various portfolios.
-
-
+                Developed multiple projects, including a PokeApp and various portfolios.
               </p>
               <div className="w-full flex flex-wrap items-center mt-4 gap-2">
-                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">
-                  React
-                </p>
-                
-                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">
-                  Tailwind CSS
-                </p>
-                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">
-                  Bootstrap
-                </p>
-                
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">React</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Tailwind CSS</p>
+                <p className="text-xs bg-secondary/30 text-secondary rounded p-1 w-fit">Bootstrap</p>
               </div>
             </div>
-
-            
           )}
-          
-          
-        
-          {TabIndex == 3 && (
+
+          {TabIndex == 4 && (
             <div className="w-full simple-fade-in-animation p-4 min-h-[250px]">
               <h3>
                 Preparatory cycle{" "}
-                <span className="text-secondary">
-                  @ Ecole Polytechnique Sousse
-                </span>
+                <span className="text-secondary">@ Ecole Polytechnique Sousse</span>
               </h3>
-              <p className="text-sm text-zinc-400 mt-1 mb-6">2020 - 2022</p>
+              <p className="text-sm text-zinc-400 mt-1 mb-6">2020 – 2022</p>
               <h3>
                 Software Engineering Degree{" "}
-                <span className="text-secondary">
-                  @ Ecole Polytechnique Sousse
-                </span>
+                <span className="text-secondary">@ Ecole Polytechnique Sousse</span>
               </h3>
-              <p className="text-sm text-zinc-400 mt-1 mb-6">2022 - Present</p>
+              <p className="text-sm text-zinc-400 mt-1 mb-6">2022 – Present</p>
             </div>
           )}
         </div>
